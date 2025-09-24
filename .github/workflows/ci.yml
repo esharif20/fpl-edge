@@ -1,7 +1,7 @@
 # .github/workflows/ci.yml
 name: CI
 on:
-  push: { branches: [main, master] }
+  push: { branches: [ main, master ] }
   pull_request:
 
 jobs:
@@ -16,14 +16,9 @@ jobs:
       contents: read
       packages: read
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      # Make sure the script is executable (in case git perms don’t preserve +x)
+      - uses: actions/checkout@v4
       - name: Make test script executable
         run: chmod +x dev/run_tests.sh
-
-      # Run your script
       - name: Run unit tests via script
         run: dev/run_tests.sh
         shell: bash
