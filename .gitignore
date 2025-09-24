@@ -15,10 +15,10 @@ ENV/
 env/
 *.env
 
-# --- Jupyter / IPython ---
-.ipynb_checkpoints
-*.ipynb_convert
-*.ipynb.tmp
+# # --- Jupyter / IPython ---
+# .ipynb_checkpoints
+# *.ipynb_convert
+# *.ipynb.tmp
 
 # --- Data / outputs ---
 data/

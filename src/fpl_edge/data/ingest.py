@@ -13,5 +13,6 @@ def fetch_players() -> pd.DataFrame:
 
 if __name__ == "__main__":
     df = fetch_players()
-    df.to_csv("data/players.csv", index=False)
+    os.makedirs("fpl_data", exist_ok=True)  # create folder if missing
+    df.to_csv("fpl_data/players.csv", index=False)
     print(f"Saved {len(df)} players to data/players.csv")
