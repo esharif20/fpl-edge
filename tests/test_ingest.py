@@ -1,5 +1,6 @@
 import unittest
-from src.fpl_edge.data.ingest import fetch_players
+from src.ingesting_data.ingest import fetch_players   # <-- note the "src."
+
 
 class TestIngest(unittest.TestCase):
     def test_fetch_players_not_empty(self):
