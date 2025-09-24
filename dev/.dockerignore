@@ -1,0 +1,11 @@
+.git
+.github
+__pycache__/
+*.pyc
+venv/
+.mypy_cache/
+.pytest_cache/
+*.ipynb_checkpoints
+.fpl_cache/
+data/
+src/fpl_data/
