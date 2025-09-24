@@ -1,5 +1,5 @@
 import unittest
-from src.ingesting_data.ingest import fetch_players   # <-- note the "src."
+from src.ingesting_data.ingest import fetch_players   
 
 
 class TestIngest(unittest.TestCase):
